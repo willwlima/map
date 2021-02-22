@@ -40,8 +40,8 @@ function onMapClick(e) {
 }
 
 // Modelo padrão
-L.marker([-20.8177769, -49.4011877]).addTo(map)
-    .bindPopup("<b>Studio WiDi</b><br/>Clique aqui<br> <a href='https://whats.link/sitedesconto'>Agende seu horario</a>"); // .openPopup()
+// L.marker([-20.8177769, -49.4011877]).addTo(map)
+//     .bindPopup("<b>Studio WiDi</b><br/>Clique aqui<br> <a href='https://whats.link/sitedesconto'>Agende seu horario</a>"); // .openPopup()
 
 // L.circle([51.508, -0.11], 500, {
 // 	color: 'red',
@@ -58,8 +58,8 @@ L.marker([-20.8177769, -49.4011877]).addTo(map)
 // Fim Modelo padrão
 
 // Dom Mercato
-L.marker([-20.8193961, -49.4043044]).addTo(map)
-    .bindPopup("<b>Dom Mercato</b><br/>Clique aqui<br> <a href='https://whats.link/sitedesconto'>Agende seu horario</a>"); // .openPopup()
+// L.marker([-20.8193961, -49.4043044]).addTo(map)
+//     .bindPopup("<b>Dom Mercato</b><br/>Clique aqui<br> <a href='https://whats.link/sitedesconto'>Agende seu horario</a>"); // .openPopup()
 
 // L.circle([51.508, -0.11], 500, {
 // 	color: 'red',
@@ -115,9 +115,9 @@ var lupaIcon = new LeafIcon({iconUrl: '/img/lupa.png'}),
 
 L.marker([-20.81957, -49.40460], {icon: lupaIcon}).bindPopup("Teste 1.").addTo(map);
 L.marker([-20.82150, -49.40519], {icon: secadorIcon}).bindPopup("<b>Studio WiDi!</b><br/>Clique aqui<br> <a href='https://whats.link/sitedesconto'>Agende seu horario</a>").addTo(map);
-L.marker([-20.81943, -49.40831], {icon: lancheIcon}).bindPopup("<b>Lanchonete!</b><br/>Tenho um desconto pra você!<br> <a href='https://whats.link/sitedesconto'>Clique aqui</a>").addTo(map);
-L.marker([-20.82851, -49.40426], {icon: pizzaIcon}).bindPopup("<b>Jucelino's Pizza</b><br/>Tenho um desconto pra você!<br> <a href='https://whats.link/sitedesconto'>Clique aqui</a>").addTo(map);
-L.marker([-20.79821, -49.41058], {icon: farmaciaIcon}).bindPopup("<b>Rede Central Farmácia</b><br/>Tenho um desconto pra você!<br> <a href='https://whats.link/sitedesconto'>Clique aqui</a>").addTo(map);
+L.marker([-20.81733, -49.38599], {icon: lancheIcon}).bindPopup("<b>Ticos's Burguer</b><br/><a href='(17) 3234-5372<br'>").addTo(map);
+L.marker([-20.82851, -49.40426], {icon: pizzaIcon}).bindPopup("<b>Jucelino's Pizza</b><br/>").addTo(map);
+L.marker([-20.79816, -49.41058], {icon: farmaciaIcon}).bindPopup("<b>Rede Central Farmácia</b><br/>(17) 3217-2000<br>").addTo(map);
 
 
 map.on('locationfound', onLocationFound);
