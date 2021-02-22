@@ -111,11 +111,13 @@ var lupaIcon = new LeafIcon({iconUrl: '/img/lupa.png'}),
     secadorIcon = new LeafIcon({iconUrl: '/img/secador.png'});
     lancheIcon = new LeafIcon({iconUrl: '/img/burguer.png'});
     pizzaIcon = new LeafIcon({iconUrl: '/img/pizza.png'});
+    farmaciaIcon = new LeafIcon({iconUrl: '/img/farmacia.png'});
 
 L.marker([-20.81957, -49.40460], {icon: lupaIcon}).bindPopup("Teste 1.").addTo(map);
 L.marker([-20.82150, -49.40519], {icon: secadorIcon}).bindPopup("<b>Studio WiDi!</b><br/>Clique aqui<br> <a href='https://whats.link/sitedesconto'>Agende seu horario</a>").addTo(map);
 L.marker([-20.81943, -49.40831], {icon: lancheIcon}).bindPopup("<b>Lanchonete!</b><br/>Tenho um desconto pra você!<br> <a href='https://whats.link/sitedesconto'>Clique aqui</a>").addTo(map);
 L.marker([-20.82851, -49.40426], {icon: pizzaIcon}).bindPopup("<b>Jucelino's Pizza</b><br/>Tenho um desconto pra você!<br> <a href='https://whats.link/sitedesconto'>Clique aqui</a>").addTo(map);
+L.marker([-20.79821, -49.41058], {icon: farmaciaIcon}).bindPopup("<b>Rede Central Farmácia</b><br/>Tenho um desconto pra você!<br> <a href='https://whats.link/sitedesconto'>Clique aqui</a>").addTo(map);
 
 
 map.on('locationfound', onLocationFound);
