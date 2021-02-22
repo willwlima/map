@@ -9,6 +9,13 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     zoomOffset: -1
 }).addTo(map);
 
+// icone personalizado
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+
+
+
 function onLocationFound(e) {
     var radius = e.accuracy / 2;
 
@@ -85,6 +92,27 @@ L.circle([-20.82848535, -49.39741721], 50, {
 // ]).addTo(mymap).bindPopup("I am a polygon.");
 
 // Fim
+
+// CONFIGURAÇÃO PADRAO ICONES PERSONALIZADOS
+var LeafIcon = L.Icon.extend({
+    options: {
+        // shadowUrl: 'leaf-shadow.png',
+        iconSize:     [38, 45],
+        // shadowSize:   [50, 64],
+        iconAnchor:   [28, 25],
+        shadowAnchor: [4, 62],
+        popupAnchor:  [-8, -10]
+    }
+});
+
+
+// DEFINIR MARCADOR PERSONALIZADO
+var greenIcon = new LeafIcon({iconUrl: '/img/lupa.png'}),
+    redIcon = new LeafIcon({iconUrl: '/img/secador.png'});
+
+L.marker([-20.81957, -49.40460], {icon: greenIcon}).bindPopup("Teste 1.").addTo(map);
+L.marker([-20.82150, -49.40519], {icon: redIcon}).bindPopup("<b>Studio WiDi!</b><br/>Clique aqui<br> <a href='https://whats.link/sitedesconto'>Agende seu horario</a>").addTo(map);
+
 
 map.on('locationfound', onLocationFound);
 map.on('locationerror', onLocationError);
