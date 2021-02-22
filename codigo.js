@@ -114,10 +114,10 @@ var lupaIcon = new LeafIcon({iconUrl: '/img/lupa.png'}),
     farmaciaIcon = new LeafIcon({iconUrl: '/img/farmacia.png'});
 
 L.marker([-20.81957, -49.40460], {icon: lupaIcon}).bindPopup("Teste 1.").addTo(map);
-L.marker([-20.82150, -49.40519], {icon: secadorIcon}).bindPopup("<b>Studio WiDi!</b><br/>Clique aqui<br> <a href='https://whats.link/sitedesconto'>Agende seu horario</a>").addTo(map);
-L.marker([-20.81733, -49.38599], {icon: lancheIcon}).bindPopup("<b>Ticos's Burguer</b><br/><a href='(17) 3234-5372<br'>").addTo(map);
-L.marker([-20.82851, -49.40426], {icon: pizzaIcon}).bindPopup("<b>Jucelino's Pizza</b><br/>").addTo(map);
-L.marker([-20.79816, -49.41058], {icon: farmaciaIcon}).bindPopup("<b>Rede Central Farmácia</b><br/>Clique aqui<br> <a href='tel:1732376117'>Ligue agora</a><br/> <a href='https://whats.link/redecentral'>WhatsApp</a>").addTo(map);
+L.marker([-20.82150, -49.40519], {icon: secadorIcon}).bindPopup("<b>Studio WiDi</b><br/>Clique aqui<br> <a href='tel:173237-6117'>Ligue agora</a><br/> <a href='https://whats.link/studiowidi'>WhatsApp</a><br>Cupom: GRUDINHO").addTo(map);
+L.marker([-20.81733, -49.38599], {icon: lancheIcon}).bindPopup("<b>Tico's Burguer</b><br/>Clique aqui<br> <a href='tel:173234-5372'>Ligue agora</a><br>Cupom: GRUDINHO").addTo(map);
+L.marker([-20.82851, -49.40426], {icon: pizzaIcon}).bindPopup("<b>Jucelino's Pizza</b><br/>Clique aqui<br> <a href='tel:1799221-2980'>Ligue agora</a><br/> <a href='https://whats.link/jucelinospizza'>WhatsApp</a><br>Cupom: GRUDINHO").addTo(map);
+L.marker([-20.79816, -49.41058], {icon: farmaciaIcon}).bindPopup("<b>Rede Central Farmácia</b><br/>Clique aqui<br> <a href='tel:1732376117'>Ligue agora</a><br/> <a href='https://whats.link/redecentral'>WhatsApp</a><br>Cupom: GRUDINHO").addTo(map);
 
 
 map.on('locationfound', onLocationFound);
