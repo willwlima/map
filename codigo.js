@@ -43,11 +43,11 @@ function onMapClick(e) {
 // L.marker([-20.8177769, -49.4011877]).addTo(map)
 //     .bindPopup("<b>Studio WiDi</b><br/>Clique aqui<br> <a href='https://whats.link/sitedesconto'>Agende seu horario</a>"); // .openPopup()
 
-// L.circle([51.508, -0.11], 500, {
-// 	color: 'red',
-// 	fillColor: '#f03',
-// 	fillOpacity: 0.5
-// }).addTo(mymap).bindPopup("I am a circle.");
+// L.circle([-20.82851, -49.40426], 50, {
+//     color: 'red',
+//     fillColor: '#f03',
+//     fillOpacity: 0.5
+// }).addTo(map).bindPopup("I am a circle.");
 
 // L.polygon([
 // 	[51.509, -0.08],
@@ -79,11 +79,11 @@ function onMapClick(e) {
 L.marker([-20.82848535, -49.39741721]).addTo(map)
     .bindPopup("<b>Studio WiDi!</b><br/>Clique aqui<br> <a href='https://whats.link/sitedesconto'>Agende seu horario</a>"); // .openPopup()
 
-L.circle([-20.82848535, -49.39741721], 50, {
-    color: 'red',
-    fillColor: '#f03',
-    fillOpacity: 0.5
-}).addTo(map).bindPopup("I am a circle.");
+// L.circle([-20.82851, -49.40426], 50, {
+//     color: 'red',
+//     fillColor: '#f03',
+//     fillOpacity: 0.5
+// }).addTo(map).bindPopup("I am a circle.");
 
 // L.polygon([
 // 	[51.509, -0.08],
