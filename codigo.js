@@ -117,7 +117,7 @@ L.marker([-20.81957, -49.40460], {icon: lupaIcon}).bindPopup("Teste 1.").addTo(m
 L.marker([-20.82150, -49.40519], {icon: secadorIcon}).bindPopup("<b>Studio WiDi!</b><br/>Clique aqui<br> <a href='https://whats.link/sitedesconto'>Agende seu horario</a>").addTo(map);
 L.marker([-20.81733, -49.38599], {icon: lancheIcon}).bindPopup("<b>Ticos's Burguer</b><br/><a href='(17) 3234-5372<br'>").addTo(map);
 L.marker([-20.82851, -49.40426], {icon: pizzaIcon}).bindPopup("<b>Jucelino's Pizza</b><br/>").addTo(map);
-L.marker([-20.79816, -49.41058], {icon: farmaciaIcon}).bindPopup("<b>Rede Central Farmácia</b><br/>(17) 3217-2000<br>").addTo(map);
+L.marker([-20.79816, -49.41058], {icon: farmaciaIcon}).bindPopup("<b>Rede Central Farmácia</b><br/>Clique aqui<br> <a href='tel:1732376117'>Ligue agora</a><br/> <a href='https://whats.link/redecentral'>WhatsApp</a>").addTo(map);
 
 
 map.on('locationfound', onLocationFound);
