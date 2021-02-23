@@ -71,7 +71,7 @@ var LeafIcon = L.Icon.extend({
         // shadowSize:   [50, 64],
         iconAnchor:   [28, 25],
         shadowAnchor: [4, 62],
-        popupAnchor:  [-8, -10]
+        popupAnchor:  [-5, -2]
     }
 });
 // DEFINIR MARCADOR PERSONALIZADO
@@ -80,7 +80,7 @@ var lupaIcon = new LeafIcon({iconUrl: '/img/pin!.png'}),
     lancheIcon = new LeafIcon({iconUrl: '/img/pinBurguer.png'});
     pizzaIcon = new LeafIcon({iconUrl: '/img/pinPizza.png'});
     farmaciaIcon = new LeafIcon({iconUrl: '/img/pinFarmacia.png'});
-
+    
 
 // MARCADORES
 L.marker([-20.81957, -49.40460], {icon: lupaIcon}).bindPopup("Em breve...").addTo(map);
