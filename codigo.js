@@ -49,11 +49,11 @@ function onMapClick(e) {
 //     fillOpacity: 0.5
 // }).addTo(map).bindPopup("I am a circle.");
 
-// L.circle([-20.81733, -49.38599], 50, {
-//     color: 'yellow',
-//     fillColor: '#ff0',
-//     fillOpacity: 0.5
-// }).addTo(map).bindPopup("I am a circle.");
+L.circle([-20.811761, -49.3762272], 300, {
+    color: 'yellow',
+    fillColor: '#ff0',
+    fillOpacity: 0.5
+}).addTo(map) //.bindPopup("I am a circle.");
 
 // L.polygon([
 // 	[51.509, -0.08],
@@ -80,6 +80,7 @@ var lupaIcon = new LeafIcon({iconUrl: '/img/pin!.png'}),
     lancheIcon = new LeafIcon({iconUrl: '/img/pinBurguer.png'});
     pizzaIcon = new LeafIcon({iconUrl: '/img/pinPizza.png'});
     farmaciaIcon = new LeafIcon({iconUrl: '/img/pinFarmacia.png'});
+    bauIcon = new LeafIcon({iconUrl: '/img/bauFechado.png'});
     
 
 // MARCADORES
@@ -92,6 +93,8 @@ L.marker([-20.81733, -49.38599], {icon: lancheIcon}).bindPopup("<b>Tico's Burgue
 L.marker([-20.82851, -49.40426], {icon: pizzaIcon}).bindPopup("<b>Jucelino's Pizza</b><br/>Clique aqui<br> <a href='tel:1799221-2980'>Ligue agora</a><br/> <a href='https://whats.link/jucelinospizza'>WhatsApp</a><br>Cupom: GRUDINHO").addTo(map);
 // Rede Central Farmácia
 L.marker([-20.79816, -49.41058], {icon: farmaciaIcon}).bindPopup("<b>Rede Central Farmácia</b><br/>Clique aqui<br> <a href='tel:1732376117'>Ligue agora</a><br/> <a href='https://whats.link/redecentral'>WhatsApp</a><br>Cupom: GRUDINHO").addTo(map);
+// São José do Rio Preto
+L.marker([-20.811761, -49.3762272], {icon: bauIcon}).bindPopup("<b>Baú da Sorte!</b><br/>Em breve uma surpresa pra você.>").addTo(map);
 
 
 map.on('locationfound', onLocationFound);
