@@ -44,10 +44,12 @@ function onMapClick(e) {
 //     .bindPopup("<b>Studio WiDi</b><br/>Clique aqui<br> <a href='https://whats.link/sitedesconto'>Agende seu horario</a>"); // .openPopup()
 
 // L.circle([-20.82851, -49.40426], 50, {
-//     color: 'red',
-//     fillColor: '#f03',
+//     color: '#00ff00',
+//     fillColor: ' #0f0',
 //     fillOpacity: 0.5
 // }).addTo(map).bindPopup("I am a circle.");
+
+
 
 // L.polygon([
 // 	[51.509, -0.08],
@@ -76,12 +78,12 @@ function onMapClick(e) {
 // Fim
 
 // HOSPITAL DE BASE
-L.marker([-20.82848535, -49.39741721]).addTo(map)
-    .bindPopup("<b>Studio WiDi!</b><br/>Clique aqui<br> <a href='https://whats.link/sitedesconto'>Agende seu horario</a>"); // .openPopup()
+// L.marker([-20.82848535, -49.39741721]).addTo(map)
+//     .bindPopup("<b>Studio WiDi!</b><br/>Clique aqui<br> <a href='https://whats.link/sitedesconto'>Agende seu horario</a>"); // .openPopup()
 
 // L.circle([-20.82851, -49.40426], 50, {
-//     color: 'red',
-//     fillColor: '#f03',
+//     color: 'yellow',
+//     fillColor: '#ff0',
 //     fillOpacity: 0.5
 // }).addTo(map).bindPopup("I am a circle.");
 
