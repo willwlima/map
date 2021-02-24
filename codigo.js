@@ -12,7 +12,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 // icone personalizado
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-	}).addTo(map);
+    }).addTo(map);
 
 
 
@@ -35,7 +35,8 @@ var popup = L.popup();
 function onMapClick(e) {
     popup
         .setLatLng(e.latlng)
-        .setContent("Para melhor interação <br>clique nos marcadores " )
+        // .setContent("Para melhor interação <br>clique nos marcadores " )
+        .setContent("<b>Para melhor interação <br>clique nos marcadores! </b><br/>Conheça os Influencers<br><a href='https://www.instagram.com/will.ahelm/'><img width='70' height='70' src=img/fotoWill.png><a href='https://www.instagram.com/digrudinho/'><img width='70' height='70' src=img/fotoDi.png><br><a href='https://www.instagram.com/letsdo302/'><img width='70' height='70' src=img/fotoLets.png></a>")
         .openOn(map);
 }
 
@@ -71,7 +72,7 @@ var LeafIcon = L.Icon.extend({
         // shadowSize:   [50, 64],
         iconAnchor:   [28, 25],
         shadowAnchor: [4, 62],
-        popupAnchor:  [-5, -2]
+        popupAnchor:  [-5, -5]
     }
 });
 // DEFINIR MARCADOR PERSONALIZADO
@@ -84,7 +85,7 @@ var lupaIcon = new LeafIcon({iconUrl: '/img/pin!.png'}),
     
 
 // MARCADORES
-L.marker([-20.81957, -49.40460], {icon: lupaIcon}).bindPopup("Em breve...").addTo(map);
+L.marker([-20.81957, -49.40460], {icon: lupaIcon}).bindPopup("Em breve...<br><img width='55' height='35' src=img/hamburger.png>").addTo(map);
 // Studio WiDi
 L.marker([-20.82150, -49.40519], {icon: secadorIcon}).bindPopup("<b>Studio WiDi</b><br/>Clique aqui<br> <a href='tel:173237-6117'>Ligue agora</a><br/> <a href='https://whats.link/studiowidi'>WhatsApp</a><br>Cupom: GRUDINHO").addTo(map);
 // Ticos Burguer
