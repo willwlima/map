@@ -77,7 +77,7 @@ var LeafIcon = L.Icon.extend({
 });
 // DEFINIR MARCADOR PERSONALIZADO
 var lupaIcon = new LeafIcon({iconUrl: '/img/pin!.png'}),
-    secadorIcon = new LeafIcon({iconUrl: '/img/pinBeleza.png'});
+    secadorIcon = new LeafIcon({iconUrl: '/img/pinWiDi.png'});
     lancheIcon = new LeafIcon({iconUrl: '/img/pinBurguer.png'});
     pizzaIcon = new LeafIcon({iconUrl: '/img/pinPizza.png'});
     farmaciaIcon = new LeafIcon({iconUrl: '/img/pinFarmacia.png'});
@@ -95,7 +95,7 @@ L.marker([-20.82851, -49.40426], {icon: pizzaIcon}).bindPopup("<b>Jucelino's Piz
 // Rede Central Farmácia
 L.marker([-20.79816, -49.41058], {icon: farmaciaIcon}).bindPopup("<b>Rede Central Farmácia</b><br/>Clique aqui<br> <a href='tel:1732376117'>Ligue agora</a><br/> <a href='https://whats.link/redecentral'>WhatsApp</a><br>Cupom: GRUDINHO").addTo(map);
 // São José do Rio Preto
-L.marker([-20.811761, -49.3762272], {icon: bauIcon}).bindPopup("<b>Baú da Sorte!</b><br/>Em breve uma surpresa pra você.>").addTo(map);
+// L.marker([-20.811761, -49.3762272], {icon: bauIcon}).bindPopup("<b>Baú da Sorte!</b><br/>Em breve uma surpresa pra você.>").addTo(map);
 
 
 map.on('locationfound', onLocationFound);
