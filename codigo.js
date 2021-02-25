@@ -81,7 +81,7 @@ var lupaIcon = new LeafIcon({iconUrl: '/img/pin!.png'}),
     lancheIcon = new LeafIcon({iconUrl: '/img/pinBurguer.png'});
     pizzaIcon = new LeafIcon({iconUrl: '/img/pinPizza.png'});
     farmaciaIcon = new LeafIcon({iconUrl: '/img/pinFarmacia.png'});
-    bauIcon = new LeafIcon({iconUrl: '/img/bauFechado.png'});
+    // bauIcon = new LeafIcon({iconUrl: '/img/pinFino.png'});
     
 
 // MARCADORES
