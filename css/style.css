@@ -1,0 +1,65 @@
+footer {
+    width: 100%;
+    background-color:#34495E;
+    padding: 4px;
+    /* height: 40px; */
+}
+
+.social{
+   
+    /* position: absolute;
+    margin: 10px 100px 10px;
+    top: -50px;
+    padding: 5px 5px; 
+    background-color: rgba(44, 173, 173, 0.925);
+    display: inline-block;
+    border-radius: 50px;
+    padding-left: 1%;
+    padding-right: 1%;
+    box-shadow: 0px 0px 7px 2px white;
+    z-index: 5100; */
+
+    position: absolute;
+    top: -80px;
+    padding: 5px 5px; 
+    display: inline-block;
+    border-radius: 20px;
+    padding-left: 1%;
+    padding-right: 1%;
+    box-shadow: 10px 2px 12px 2px #34495E;
+    z-index: 5100;   
+}
+
+img {
+    
+    width: 60px;
+    height: 60px;
+}
+
+.whatsapp {
+    position: absolute;
+    top: 400px;
+    padding: 5px 5px; 
+    display: inline-block;
+    border-radius: 20px;
+    padding-left: 1%;
+    padding-right: 1%;
+    box-shadow: 10px 2px 12px 2px #7BD081;
+    z-index: 5100;
+}
+
+
+
+.copy{
+
+    font-weight: 200;
+   
+    color: aliceblue;
+    position: absolute;
+    width: 95vw;
+    padding: 30px 0;
+    text-align: center;
+    
+
+    
+}

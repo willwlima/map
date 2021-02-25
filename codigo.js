@@ -36,7 +36,7 @@ function onMapClick(e) {
     popup
         .setLatLng(e.latlng)
         // .setContent("Para melhor interação <br>clique nos marcadores " )
-        .setContent("<b>Para melhor interação <br>clique nos marcadores! </b><br/>Conheça os Influencers<br><a href='https://www.instagram.com/will.ahelm/'><img width='70' height='70' src=img/fotoWill.png><a href='https://www.instagram.com/digrudinho/'><img width='70' height='70' src=img/fotoDi.png><br><a href='https://www.instagram.com/letsdo302/'><img width='70' height='70' src=img/fotoLets.png></a>")
+        .setContent("<b>Para melhor interação<br>clique nos marcadores! ") //</b><br/>Conheça os Influencers<br><a href='https://www.instagram.com/will.ahelm/'><img width='70' height='70' src=img/fotoWill.png><a href='https://www.instagram.com/digrudinho/'><img width='70' height='70' src=img/fotoDi.png><br><a href='https://www.instagram.com/letsdo302/'><img width='70' height='70' src=img/fotoLets.png></a>")
         .openOn(map);
 }
 
