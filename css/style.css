@@ -1,7 +1,8 @@
 footer {
-    width: 100%;
+    width: 100vw;
     background-color:#34495E;
-    padding: 4px;
+    padding: 0;
+
     /* height: 40px; */
 }
 
@@ -20,13 +21,13 @@ footer {
     z-index: 5100; */
 
     position: absolute;
-    top: -80px;
+    top: 0px;
     padding: 5px 5px; 
     display: inline-block;
     border-radius: 20px;
     padding-left: 1%;
     padding-right: 1%;
-    box-shadow: 10px 2px 12px 2px #34495E;
+    /* box-shadow: 10px 2px 12px 2px #34495E; */
     z-index: 5100;   
 }
 
@@ -38,28 +39,23 @@ img {
 
 .whatsapp {
     position: absolute;
-    top: 400px;
+    top: 430px;
     padding: 5px 5px; 
     display: inline-block;
     border-radius: 20px;
     padding-left: 1%;
     padding-right: 1%;
-    box-shadow: 10px 2px 12px 2px #7BD081;
+    /* box-shadow: 10px 2px 12px 2px #7BD081; */
+    box-shadow: 10px 2px 12px 2px #34495E;
+
     z-index: 5100;
 }
 
 
 
-.copy{
-
-    font-weight: 200;
-   
+p{
+    font-weight: 200;   
     color: aliceblue;
-    position: absolute;
-    width: 95vw;
-    padding: 30px 0;
     text-align: center;
-    
 
-    
 }
