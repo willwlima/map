@@ -83,6 +83,7 @@ var lupaIcon = new LeafIcon({iconUrl: '/img/pin!.png'}),
     farmaciaIcon = new LeafIcon({iconUrl: '/img/pinFarmacia.png'});
     foodTruckIcon = new LeafIcon({iconUrl: '/img/foodTruck.png'});
     deliveryIcon = new LeafIcon({iconUrl: '/img/delivery.png'});
+    turismoIcon = new LeafIcon({iconUrl: '/img/pinTurismo.png'});
     // bauIcon = new LeafIcon({iconUrl: '/img/pinFino.png'});
     
 
@@ -102,6 +103,8 @@ L.marker([-20.79816, -49.41058], {icon: farmaciaIcon}).bindPopup("<b>Rede Centra
 L.marker([-20.81681, -49.39585], {icon: foodTruckIcon}).bindPopup("<b>Temakeria</b><br/>Clique aqui<br> <a href='tel:1732376117'>Ligue agora</a><br/> <a href='https://whats.link/redecentral'>WhatsApp</a><br>Cupom: ...").addTo(map);
 // Delivery
 L.marker([-20.82258, -49.40385], {icon: deliveryIcon}).bindPopup("<b>Restaurante</b><br/>Apenas delivery<br>Clique aqui<br> <a href='tel:1732376117'>Ligue agora</a><br/> <a href='https://whats.link/redecentral'>WhatsApp</a><br>Cupom: ...").addTo(map);
+// Turismo
+L.marker([-20.82088, -49.38455], {icon: turismoIcon}).bindPopup("<b>Turismo</b><br/>Sua viagem esta aqui!<br>Clique aqui<br> <a href='tel:1732376117'>Ligue agora</a><br/> <a href='https://whats.link/redecentral'>WhatsApp</a><br>Cupom: ...").addTo(map);
 
 
 map.on('locationfound', onLocationFound);
