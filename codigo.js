@@ -112,3 +112,5 @@ map.on('locationerror', onLocationError);
 
 map.locate({setView: true, maxZoom: 16});
 map.on('click', onMapClick);
+
+
