@@ -78,21 +78,23 @@ var LeafIcon = L.Icon.extend({
 // DEFINIR MARCADOR PERSONALIZADO
 var lupaIcon = new LeafIcon({iconUrl: '/img/pin!.png'}),
     secadorIcon = new LeafIcon({iconUrl: '/img/pinWiDi.png'});
-    lancheIcon = new LeafIcon({iconUrl: '/img/pinBurguer.png'});
+    ticosBurguerIcon = new LeafIcon({iconUrl: '/img/pinTicosBurguer.png'});
     pizzaIcon = new LeafIcon({iconUrl: '/img/pinPizza.png'});
     farmaciaIcon = new LeafIcon({iconUrl: '/img/pinFarmacia.png'});
     foodTruckIcon = new LeafIcon({iconUrl: '/img/foodTruck.png'});
     deliveryIcon = new LeafIcon({iconUrl: '/img/delivery.png'});
     turismoIcon = new LeafIcon({iconUrl: '/img/pinTurismo.png'});
+    marinerIcon = new LeafIcon({iconUrl: '/img/pinMariner.png'});
+    canossaIcon = new LeafIcon({iconUrl: '/img/pinCanossa.png'});
     // bauIcon = new LeafIcon({iconUrl: '/img/pinFino.png'});
     
 
 // MARCADORES
-L.marker([-20.81957, -49.40460], {icon: lupaIcon}).bindPopup("<b>Em breve...").addTo(map);
+//L.marker([-20.81957, -49.40460], {icon: lupaIcon}).bindPopup("<b>Em breve...").addTo(map);
 // Studio WiDi
 L.marker([-20.82150, -49.40519], {icon: secadorIcon}).bindPopup("<b>Studio WiDi</b><br/>Clique aqui<br> <a href='tel:173237-6117'>Ligue agora</a><br/> <a href='https://whats.link/studiowidi'>WhatsApp</a><br>Cupom: ...").addTo(map);
 // Ticos Burguer
-L.marker([-20.81733, -49.38599], {icon: lancheIcon}).bindPopup("<b>Tico's Burguer</b><br/>Clique aqui<br> <a href='tel:173234-5372'>Ligue agora</a><br>Cupom: ...").addTo(map);
+L.marker([-20.81733, -49.38599], {icon: ticosBurguerIcon}).bindPopup("<b>Tico's Burguer</b><br/>Clique aqui<br> <a href='tel:173234-5372'>Ligue agora</a><br>Cupom: ...").addTo(map);
 // Jucelinos Pizza
 L.marker([-20.82851, -49.40426], {icon: pizzaIcon}).bindPopup("<b>Jucelino's Pizza</b><br/>Clique aqui<br> <a href='tel:1799221-2980'>Ligue agora</a><br/> <a href='https://whats.link/jucelinospizza'>WhatsApp</a><br>Cupom: ...").addTo(map);
 // Rede Central Farmácia
@@ -100,11 +102,17 @@ L.marker([-20.79816, -49.41058], {icon: farmaciaIcon}).bindPopup("<b>Rede Centra
 // São José do Rio Preto
 // L.marker([-20.811761, -49.3762272], {icon: bauIcon}).bindPopup("<b>Baú da Sorte!</b><br/>Em breve uma surpresa pra você.>").addTo(map);
 // Food Truck
-L.marker([-20.81681, -49.39585], {icon: foodTruckIcon}).bindPopup("<b>Temakeria</b><br/>Clique aqui<br> <a href='tel:1732376117'>Ligue agora</a><br/> <a href='https://whats.link/redecentral'>WhatsApp</a><br>Cupom: ...").addTo(map);
+//L.marker([-20.81681, -49.39585], {icon: foodTruckIcon}).bindPopup("<b>Temakeria</b><br/>Clique aqui<br> <a href='tel:1732376117'>Ligue agora</a><br/> <a href='https://whats.link/redecentral'>WhatsApp</a><br>Cupom: ...").addTo(map);
 // Delivery
-L.marker([-20.82258, -49.40385], {icon: deliveryIcon}).bindPopup("<b>Restaurante</b><br/>Apenas delivery<br>Clique aqui<br> <a href='tel:1732376117'>Ligue agora</a><br/> <a href='https://whats.link/redecentral'>WhatsApp</a><br>Cupom: ...").addTo(map);
+//L.marker([-20.82258, -49.40385], {icon: deliveryIcon}).bindPopup("<b>Restaurante</b><br/>Apenas delivery<br>Clique aqui<br> <a href='tel:1732376117'>Ligue agora</a><br/> <a href='https://whats.link/redecentral'>WhatsApp</a><br>Cupom: ...").addTo(map);
 // Turismo
-L.marker([-20.82088, -49.38455], {icon: turismoIcon}).bindPopup("<b>Turismo</b><br/>Sua viagem esta aqui!<br>Clique aqui<br> <a href='tel:1732376117'>Ligue agora</a><br/> <a href='https://whats.link/redecentral'>WhatsApp</a><br>Cupom: ...").addTo(map);
+//L.marker([-20.82088, -49.38455], {icon: turismoIcon}).bindPopup("<b>Turismo</b><br/>Sua viagem esta aqui!<br>Clique aqui<br> <a href='tel:1732376117'>Ligue agora</a><br/> <a href='https://whats.link/redecentral'>WhatsApp</a><br>Cupom: ...").addTo(map);
+// Mariner Av. Constituição
+L.marker([-20.80968, -49.39063], {icon: marinerIcon}).bindPopup("<b>Mariner Calçados</b><br/>Loja Av. Constituição<br>Clique aqui<br> <a href='tel:1735126941'>Ligue agora</a><br/> <a href='https://whats.link/mariner'>WhatsApp</a><br>").addTo(map);
+// Mariner Aeroporto
+L.marker([-20.81545, -49.41105], {icon: marinerIcon}).bindPopup("<b>Mariner Calçados</b><br/>Loja Aeroporto<br>Clique aqui<br> <a href='tel:1735126941'>Ligue agora</a><br/> <a href='https://whats.link/mariner'>WhatsApp</a><br>").addTo(map);
+// Canossa Tatoo
+L.marker([-20.84768, -49.34314], {icon: canossaIcon}).bindPopup("<b>Canossa Tatoo</b><br/>Apenas com agendamento previo!<br>Clique aqui<br/> <a href='https://whats.link/mariner'>WhatsApp</a><br>").addTo(map);
 
 
 map.on('locationfound', onLocationFound);
