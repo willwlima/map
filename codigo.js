@@ -112,7 +112,7 @@ L.marker([-20.80968, -49.39063], {icon: marinerIcon}).bindPopup("<b>Mariner Cal√
 // Mariner Aeroporto
 L.marker([-20.81545, -49.41105], {icon: marinerIcon}).bindPopup("<b>Mariner Cal√ßados</b><br/>Loja Aeroporto<br>Clique aqui<br> <a href='tel:1735126941'>Ligue agora</a><br/> <a href='https://whats.link/mariner'>WhatsApp</a><br>").addTo(map);
 // Canossa Tatoo
-L.marker([-20.84768, -49.34314], {icon: canossaIcon}).bindPopup("<b>Canossa Tatoo</b><br/>Apenas com agendamento previo!<br>Clique aqui<br/> <a href='https://whats.link/mariner'>WhatsApp</a><br>").addTo(map);
+L.marker([-20.84768, -49.34314], {icon: canossaIcon}).bindPopup("<b>Canossa Tatoo</b><br/>Apenas com agendamento previo!<br>Clique aqui<br/> <a href='https://whats.link/canossatatoo'>WhatsApp</a><br>").addTo(map);
 
 
 map.on('locationfound', onLocationFound);
