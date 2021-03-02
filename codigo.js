@@ -80,7 +80,7 @@ var lupaIcon = new LeafIcon({iconUrl: '/img/pin!.png'}),
     secadorIcon = new LeafIcon({iconUrl: '/img/pinWiDi.png'});
     ticosBurguerIcon = new LeafIcon({iconUrl: '/img/pinTicosBurguer.png'});
     pizzaIcon = new LeafIcon({iconUrl: '/img/pinPizza.png'});
-    farmaciaIcon = new LeafIcon({iconUrl: '/img/pinFarmacia.png'});
+    redeCentralIcon = new LeafIcon({iconUrl: '/img/pinRedeCentral.png'});
     foodTruckIcon = new LeafIcon({iconUrl: '/img/foodTruck.png'});
     deliveryIcon = new LeafIcon({iconUrl: '/img/delivery.png'});
     turismoIcon = new LeafIcon({iconUrl: '/img/pinTurismo.png'});
@@ -98,7 +98,7 @@ L.marker([-20.81733, -49.38599], {icon: ticosBurguerIcon}).bindPopup("<b>Tico's 
 // Jucelinos Pizza
 L.marker([-20.82851, -49.40426], {icon: pizzaIcon}).bindPopup("<b>Jucelino's Pizza</b><br/>Clique aqui<br> <a href='tel:1799221-2980'>Ligue agora</a><br/> <a href='https://whats.link/jucelinospizza'>WhatsApp</a><br>Cupom: ...").addTo(map);
 // Rede Central Farmácia
-L.marker([-20.79816, -49.41058], {icon: farmaciaIcon}).bindPopup("<b>Rede Central Farmácia</b><br/>Clique aqui<br> <a href='tel:1732376117'>Ligue agora</a><br/> <a href='https://whats.link/redecentral'>WhatsApp</a><br>Cupom: ...").addTo(map);
+L.marker([-20.79816, -49.41058], {icon: redeCentralIcon}).bindPopup("<b>Rede Central Farmácia</b><br/>Clique aqui<br> <a href='tel:1732376117'>Ligue agora</a><br/> <a href='https://whats.link/redecentral'>WhatsApp</a><br>Cupom: ...").addTo(map);
 // São José do Rio Preto
 // L.marker([-20.811761, -49.3762272], {icon: bauIcon}).bindPopup("<b>Baú da Sorte!</b><br/>Em breve uma surpresa pra você.>").addTo(map);
 // Food Truck
