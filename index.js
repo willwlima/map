@@ -28,8 +28,8 @@ function onLocationFound(e) {
 function onLocationError(e) {
     alert(e.message);
 }
-map.on('Localização Falhou', onLocationError); //adicionado mas não surtir efeito retirar
-
+map.on('Localização encontrada', onLocationFound);
+map.on('Erro na localização', onLocationError);
 
 var popup = L.popup();
 
