@@ -1,56 +1,136 @@
+<html lang="pt-br"></html>
 
-<!doctype html>
-<html lang="pt-br">
-  <head>
-	<title>Club Map</title>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="popup" id="popup-1">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="close-btn" onclick="togglePopup()">&times;</div>
+      <h2>Termos de uso</h2>
+      <p class="ppopup">Para localizar os parceiros é necessario utilizar sua localização aproximada.
+        Essa ação irá mostrar os parceiros mais próximos de você.
+      </p>
+      <a href="principal.html"><button class="entrar">Entrar</button></a>
+    </div>
+  </div>
+    
+    <img class="imginicio" src="img/pinClubMap.png" onclick="togglePopup()">
+    <!-- <button onclick="togglePopup()">Club Map</button> -->
+             
+  <style>
+  .popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:#ffffff;
+    z-index:1;
+    display:none;
+  }
+   
+  .popup .content {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:#34495eb6;
+    width:500px;
+    height:250px;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+    font-family:"Open Sans",sans-serif;
+  }
+   
+  .popup .close-btn {
+    cursor:pointer;
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    height:30px;
+    background:#222;
+    color:#fff;
+    font-size:25px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    border-radius:50%;
+  }
+   
+  .popup.active .overlay {
+    display:block;
+  }
+   
+  .popup.active .content {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
 
-	<link rel="stylesheet" href="css/style.css">
+  button {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding:15px;
+    font-size:18px;
+    /* border:2px solid #222; */
+    color: #34495e;
+    text-transform:uppercase;
+    font-weight:600;
+    /* background:#34495e; */
+  }
 
-	<link rel="shortcut icon" type="image/x-icon" href="img/pin!.png" />
+  /* botão de entrar para a pagina inicial  */
+  .entrar {
+    position:absolute;
+    top:80%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding:15px;
+    font-size:18px;
+    border:2px solid #222;
+    border-radius: 10px;
+    color:#34495e;
+    text-transform:uppercase;
+    font-weight:600;
+    background:#fff;
+  }
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+/* h1 {
+    color: #34495e;
+    position:absolute;
+    top:60%;
+    left:50%;
+    font-size: 20px;
+    text-align: center;
+    transform:translate(-50%,-50%);
+    z-index: 2;
+} */
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+h2 {
+    color: #fff;
+}
 
-	<style>
-		html, body {
-			height: 92.5%;
-			margin: 0;
-		}
-		#map {
-			width: 600px;
-			height: 400px;
-		}
-	</style>
+.ppopup {
+    color: #fff;
+}
 
-	<style>body { padding: 0; margin: 0; } #map { height: 100%; width: 100vw; } </style>
-  </head>
-  <body>
+.imginicio {
+    position:absolute;
+    top:50%;
+    left:50%;
+    width: 20%;
+    transform:translate(-50%,-50%);
+        
+}
 
-	<div id='map'></div>
-	<script src="index.js"></script>
-  
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<footer>
-	<div class="whatsapp">
-		<a href='https://whats.link/contactclubmap'><img src="img/whatsapp.png"></a>
-	</div>
-	<div class="social" style="position:relative;">
-		<a  href='delivery.html'><img src=img/iconDelivery.png></a>
-		<!-- <a href='#'><img src=img/iconGuincho.png></a> -->
-		<!-- <a href='#'><img src=img/modelofoto.png></a> -->
-	</div>
-		<p>&copy; 2020 Club Map</p>
-</footer>
-</body>
-</html>
+</style>
+
+
+<script>
+    function togglePopup(){
+  document.getElementById("popup-1").classList.toggle("active");
+}
+	          	
+</script>
