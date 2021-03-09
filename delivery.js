@@ -86,7 +86,7 @@ var ticosBurguerIcon = new LeafIcon({iconUrl: '/img/pinTicosBurguer.png'});
 // Ticos Burguer
 L.marker([-20.81733, -49.38599], {icon: ticosBurguerIcon}).bindPopup("<b>Tico's Burguer</b><br/>Clique aqui<br> <a href='tel:173234-5372'>Ligue agora</a><br>Cupom: ...").addTo(map);
 // Jucelinos Pizza
-L.marker([-20.82851, -49.40426], {icon: jucelinoPizzaIcon}).bindPopup("<b>Jucelino's Pizza</b><br/>Clique aqui<br> <a href='tel:1799221-2980'>Ligue agora</a><br/> <a href='https://whats.link/jucelinospizza'>WhatsApp</a><br>Cupom: ...").addTo(map);
+L.marker([-20.82851, -49.40426], {icon: jucelinoPizzaIcon}).bindPopup("<b>Jucelino's Pizza</b><br/>Apenas delivery<br> <a href='tel:1799221-2980'>Ligue agora</a><br/> <a href='https://whats.link/jucelinospizza'>WhatsApp</a><br>Cupom: ...").addTo(map);
 // Food Truck
 //L.marker([-20.81681, -49.39585], {icon: foodTruckIcon}).bindPopup("<b>Temakeria</b><br/>Clique aqui<br> <a href='tel:1732376117'>Ligue agora</a><br/> <a href='https://whats.link/redecentral'>WhatsApp</a><br>Cupom: ...").addTo(map);
 // Delivery
