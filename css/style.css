@@ -1,6 +1,6 @@
 .social{   
     position: absolute;
-    top: 300px;
+    top: 350px;
     padding: 5px 5px; 
     display: inline-block;
     
@@ -21,7 +21,7 @@ img {
 
 .whatsapp {
     position: absolute;
-    top: 450px;
+    top: 500px;
     padding: 5px 5px; 
     display: inline-block;
     border-radius: 20px;
