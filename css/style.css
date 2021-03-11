@@ -40,6 +40,16 @@ p{
 
 }
 
+.whatsapp__modify {
+    color: green;
+    font-size: 2rem;
+}
+
+.phone__modify {
+    color: #34495E;
+    font-size: 2rem;
+}
+
 footer {
     width: 100vw;
     background-color:#34495E;
