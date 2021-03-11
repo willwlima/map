@@ -86,9 +86,10 @@ var lupaIcon = new LeafIcon({iconUrl: '/img/pin!.png'}),
     // Ticos Burguer
     L.marker([-20.81733, -49.38599], {icon: ticosBurguerIcon}).bindPopup("<b>Tico's Burguer</b><br/>Clique aqui<br> <a href='tel:173234-5372'><i class='fas fa-phone-square-alt phone__modify'></i></a>  <a href='https://whats.link/ticosburguerrp'><i class='fab fa-whatsapp-square whatsapp__modify'></i></a><br><b>Cupom: ...").addTo(map);
     // Jucelinos Pizza
-    L.marker([-20.82851, -49.40426], {icon: jucelinoPizzaIcon}).bindPopup("<b>Jucelino's Pizza</b><br/>Apenas delivery<br> <a href='tel:1799221-2980'><i class='fas fa-phone-square-alt phone__modify'></i></a>  <a href='https://whats.link/jucelinospizza'><i class='fab fa-whatsapp-square whatsapp__modify'></i></a><br>Cupom: ...").addTo(map);
+    L.marker([-20.82851, -49.40426], {icon: jucelinoPizzaIcon}).bindPopup("<b>Jucelino's Pizza</b><br/>Apenas delivery<br> <a href='tel:1799221-2980'><i class='fas fa-phone-square-alt phone__modify'></i></a>  <a href='https://whats.link/jucelinospizzarp'><i class='fab fa-whatsapp-square whatsapp__modify'></i></a><br>Cupom: ...").addTo(map);
     // Rede Central Farmácia
-    L.marker([-20.79816, -49.41058], {icon: redeCentralIcon}).bindPopup("<b>Rede Central Farmácia</b><br/>Clique aqui<br> <a href='tel:1732376117'><i class='fas fa-phone-square-alt phone__modify'></i></a>  <a href='https://whats.link/redecentral'><i class='fab fa-whatsapp-square whatsapp__modify'></i></a><br>Cupom: ...").addTo(map);
+    L.marker([-20.79816, -49.41058], {icon: redeCentralIcon}).bindPopup("<b>Rede Central Farmácia</b><br/>Clique aqui<br> <a href='tel:1732376117'><i class='fas fa-phone-square-alt phone__modify'></i></a>  <a href='https://whats.link/redecentralrp'><i class='fab fa-whatsapp-square whatsapp__modify'></i></a><br>Cupom: ...").addTo(map);
+    // Mariner Curva da Galinha
     L.marker([-20.80968, -49.39063], {icon: marinerIcon}).bindPopup("<b>Mariner Calçados</b><br/>Loja Av. Constituição<br>Clique aqui<br> <a href='tel:1735126941'><i class='fas fa-phone-square-alt phone__modify'></i></a>  <a href='https://whats.link/mariner'><i class='fab fa-whatsapp-square whatsapp__modify'></i></a><br>").addTo(map);
     // Mariner Aeroporto
     L.marker([-20.81545, -49.41105], {icon: marinerIcon}).bindPopup("<b>Mariner Calçados</b><br/>Loja Aeroporto<br>Clique aqui<br> <a href='tel:1735126941'><i class='fas fa-phone-square-alt phone__modify'></i></a>  <a href='https://whats.link/mariner'><i class='fab fa-whatsapp-square whatsapp__modify'></i></a><br>").addTo(map);
