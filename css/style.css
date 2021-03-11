@@ -50,6 +50,13 @@ p{
     font-size: 2rem;
 }
 
+.avaliar__modify {
+    color: #bb9430;
+    font-size: 13px;
+    text-align: center;
+}
+
+
 footer {
     width: 100vw;
     background-color:#34495E;

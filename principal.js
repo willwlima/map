@@ -82,7 +82,7 @@ var lupaIcon = new LeafIcon({iconUrl: '/img/pin!.png'}),
 
     // Marcadores
     // Studio WiDi
-    L.marker([-20.82150, -49.40519], {icon: secadorIcon}).bindPopup("<b>Studio WiDi</b><br/>Clique aqui<br> <a href='tel:173237-6117'><i class='fas fa-phone-square-alt phone__modify'></i>  </a><a href='https://whats.link/studiowidi'><i class='fab fa-whatsapp-square whatsapp__modify'></i></a><br>Cupom: ...").addTo(map);
+    L.marker([-20.82150, -49.40519], {icon: secadorIcon}).bindPopup("<b>Studio WiDi</b><br/>Clique aqui<br> <a href='tel:173237-6117'><i class='fas fa-phone-square-alt phone__modify'></i>  </a><a href='https://whats.link/studiowidi'><i class='fab fa-whatsapp-square whatsapp__modify'></i></a><br><a href='https://forms.gle/95ryVaQhXHbuc3AY9'><i class='fas fa-star avaliar__modify'>Avaliar</i>").addTo(map);
     // Ticos Burguer
     L.marker([-20.81733, -49.38599], {icon: ticosBurguerIcon}).bindPopup("<b>Tico's Burguer</b><br/>Clique aqui<br> <a href='tel:173234-5372'><i class='fas fa-phone-square-alt phone__modify'></i></a>  <a href='https://whats.link/ticosburguerrp'><i class='fab fa-whatsapp-square whatsapp__modify'></i></a><br><b>Cupom: ...").addTo(map);
     // Jucelinos Pizza
